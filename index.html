@@ -4,11 +4,15 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Игорь Карпов — тестовый проект</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+	<!--   Задаем стили  -->
+
 	<style type="text/css">
+
 	body {
-		font-family: Arial, sans-serif;
+		font-family: 'Roboto', Tahoma, sans-serif;
 		margin: 0;
-		
 	}
 
 /*header---------------------------------------------------------*/
@@ -16,11 +20,11 @@
 	header {
 
 		margin: 0 0 100px 0;
+		background-color: #fbfbfb;
 
 	}
 
 	.fixed-container {
-		background-color: #fff; /*#fbfbfb;*/
 		width: 1170px;
 		height: 765px;
 		margin: 0 auto;
@@ -47,6 +51,7 @@
 	}
 
 	nav {
+		font-size: 16px;
 		display: flex;
 	}
 
@@ -68,24 +73,36 @@
 	}
 
 	.phone {
-		font-size: 20px;
+		font-size: 25px;
 		font-weight: bold;
 		margin-right: 30px;
 	}
 	.order-call {
 		border: 1px solid #ff4e2e;
-		padding: 16px 40px;
+		padding: 16px 60px;
+		font-size: 16px;
 		color: #ff4e2e;
 		background-color: white;
 		cursor: pointer;
 	}
 
+	.order-call:hover {
+		background-color: #ff4e2e;
+   		color: #fff;
+   	}
+
 	.more-info {
+		font-size: 18px;
 		border: 1px solid #ff4e2e;
-		padding: 16px 40px;
+		padding: 16px 60px;
 		color: white;
 		background-color: #ff4e2e;
 		cursor: pointer;
+	}
+
+	.more-info:hover {
+		background-color: #fff;
+   		color: #ff4e2e;
 	}
 
 	.title-container {
@@ -94,12 +111,11 @@
 		justify-content: center;
 		align-items: flex-start;
 		height: 765px;
-		
 	}
 
 	h1 {
-		font-size: 60px;
-		margin: 0 0 15px;
+		font-size: 80px;
+		margin: 0 0 10px 0;
 	}
 
 	h2 {
@@ -113,9 +129,17 @@
 		color: #8993ad;
 		font-size: 24px;
 		font-weight: normal;
+		margin: 0 0 20px 0;
 	}
 
 /*main-------------------------------------------------*/
+
+	.service-container {
+		width: 1170px;
+		padding: 0 100px;
+		margin: 0 auto;
+	}
+
 	.box-for {
 		display: flex;
    		justify-content: space-around;
@@ -142,7 +166,7 @@
 	}
 
 	.price-but {
-		
+		font-size: 18px;
 		border: 1px solid #ff4e2e;
 		padding: 16px 40px;
 		color: white;
@@ -150,9 +174,15 @@
 		cursor: pointer;
 		margin-bottom: 100px;
 	}
+
+	.price-but:hover {
+		background-color: #fff;
+   		color: #ff4e2e;
+	}
 	    
 	</style>
-	}
+	
+	
 </head>
 <body>
 	<header>
@@ -161,7 +191,7 @@
 				<nav>
 					<a href="#">Услуги</a>
 					<a href="#">Портфолио</a>
-					<a href="#">Цены</a>
+					<a href="#">Стоимость</a>
 				</nav>
 				<div class="phone-container">
 					<span class="phone">+7 495 555-55-55</span>
